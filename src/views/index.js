@@ -12,6 +12,7 @@ module.exports = function (templateParams) {
     //     "{% endblock %}";
 
     var _html = '{% extends "./layout.html" %}' +    
+    
         '{% block title %}My Page{% endblock %}' +
         '{% block styles %}' +
         webAssetsHelp.styles +
