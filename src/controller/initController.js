@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, "__esModule", {
     value: true
-});
+});   
 
 var _indexController = require('./indexController');
 
