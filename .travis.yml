@@ -24,12 +24,12 @@ branches:
 #   global:
 #   - GH_REF: github.com/WangGenzhen/WangGenzhen.github.io.git
 
-before_install:
-- openssl aes-256-cbc -K $encrypted_0f0742040902_key -iv $encrypted_0f0742040902_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa #设置权限
+# before_install:
+# - openssl aes-256-cbc -K $encrypted_0f0742040902_key -iv $encrypted_0f0742040902_iv
+#   -in id_rsa.enc -out ~/.ssh/id_rsa -d
+# - chmod 600 ~/.ssh/id_rsa #设置权限
 # - echo -e "Host 140.143.202.200\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 #还有一点可能会用上，因为 travis 第一次登录远程服务器会出现 SSH 主机验证，这边会有一个主机信任问题。官方给出的方案是添加 addons 配置：
-addons:
-  ssh_known_hosts: '140.143.202.200'
+# addons:
+#   ssh_known_hosts: '140.143.202.200'
