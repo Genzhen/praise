@@ -20,9 +20,6 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
 
 
 
-
-
-
 // const webdriver = require('selenium-webdriver');
 // const By = webdriver.By;
 // const driver = new webdriver.Builder()
