@@ -3,13 +3,13 @@ node_js: stable
 install:
 - npm install
 script:
-- gulp
+# - gulp
 - npm run unit
 - npm run e2e
 - npm run server
-- npm run webpackdev
+# - npm run webpackdev
 after_script:
-- scp -o stricthostkeychecking=no  -r ./build/* root@140.143.202.200:/usr/share/nginx/html/praise_travis
+- scp -o stricthostkeychecking=no  -r ./* root@140.143.202.200:/usr/share/nginx/html/test
 # - scp -o stricthostkeychecking=no   ./package.json root@140.143.202.200:/usr/share/nginx/html/praise_travis
 # - scp -o stricthostkeychecking=no   ./package-lock.json root@140.143.202.200:/usr/share/nginx/html/praise_travis
 branches:
