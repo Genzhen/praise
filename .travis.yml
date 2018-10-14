@@ -3,22 +3,17 @@ node_js: stable
 install:
 - npm install
 script:
-# - gulp
 - npm run unit
 - npm run e2e
 - npm run server
-# - npm run webpackdev
 after_script:
 - scp -o stricthostkeychecking=no  -r ./* root@140.143.202.200:/usr/share/nginx/html/test
-# - scp -o stricthostkeychecking=no   ./package.json root@140.143.202.200:/usr/share/nginx/html/praise_travis
-# - scp -o stricthostkeychecking=no   ./package-lock.json root@140.143.202.200:/usr/share/nginx/html/praise_travis
 branches:
   only:
   - master
 before_install:
 - openssl aes-256-cbc -K $encrypted_adfd768a7744_key -iv $encrypted_adfd768a7744_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa #设置权限
+- chmod 600 ~/.ssh/id_rsa
 addons:
-  ssh_known_hosts: '140.143.202.200'
-
+  ssh_known_hosts: 140.143.202.200
