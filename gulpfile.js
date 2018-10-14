@@ -4,6 +4,8 @@ const babel = require('gulp-babel');
 // gulp.task('default',['praise'], () =>
    // gulp.watch(['src/**/*.es','!src/public/**/*.es'],['prsise'])
 // );
+
+
 gulp.task("default",['praise']);
 gulp.task('praise', () =>
     gulp.src(['src/**/*.es','!src/public/**/*.es'])
