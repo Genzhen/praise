@@ -15,7 +15,7 @@ describe("接口测试", function () {
             .end(function (err, res) {
                 // should.not.exist(err);
                 // res.body.status.should.equal('1');
-                // done(err);
+                done();
             })
     })
     // it("数据添加失败", function (done) {
