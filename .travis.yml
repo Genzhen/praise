@@ -8,7 +8,7 @@ env:
 install:
 - npm install
 script:
-- node ./tests/e2e.js
+- node ./test/e2e.js
 - npm run unit
 - npm run server
 after_script:
