@@ -13,6 +13,7 @@ describe("接口测试", function () {
             })
             .expect(404)
             .end(function (err, res) {
+                // console.log(should);
                 // should.not.exist(err);
                 // res.body.status.should.equal('1');
                 done();
