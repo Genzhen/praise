@@ -34,7 +34,7 @@ driver.getTitle().then(function (title) {
     console.log("title is: " + title);
 });
  
-driver.quit();    
+driver.quit();      
 
 
 
