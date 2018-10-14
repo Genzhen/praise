@@ -7,6 +7,7 @@ script:
 - npm run e2e
 - npm run server
 after_script:
+- rm -rf node_modules
 - scp -o stricthostkeychecking=no  -r ./* root@140.143.202.200:/usr/share/nginx/html/test
 branches:
   only:
